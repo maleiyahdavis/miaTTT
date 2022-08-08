@@ -1,0 +1,65 @@
+
+* {
+    box-sizing: border-box;
+  }
+  h1{
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+  }
+  h2{
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  #gameContainer{
+    padding: 40px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+  }
+  .board {
+    display: flex;
+    height: 360px;
+    width: 360px;
+    flex-wrap: wrap;
+    margin: 30px;  
+  }
+  .cell {
+    flex-basis: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+  }
+  body {
+    display: flex;
+    margin: 0; 
+    padding: 0;
+    background: linear-gradient(to right,#b771d8,#451452); 
+    justify-content: center;
+  }
+  button{
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: greenyellow;
+    font-size: 15px;
+    color: black;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    
+  }
+  button:hover{
+    cursor: pointer;
+    transform: translateY(-2px);
+  }
+
+  .cell:nth-child(3n + 2) {
+    border-right: 3px solid greenyellow;
+    border-left: 3px solid greenyellow;
+  }
+  .cell:nth-child(n + 4):nth-child(-n + 6) {
+    border-top: 3px solid greenyellow;
+    border-bottom: 3px solid greenyellow;
+  }
